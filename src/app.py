@@ -74,7 +74,7 @@ def registrar_alumno():
             )
             cursor.execute(sql)
             con.connection.commit()
-            return jsonify({'mensaje': 'Alumno agregado', 'exito': True})
+            return jsonify({'mensaje': 'Alumno agregados', 'exito': True})
     except Exception as ex:
         return jsonify({"message": "Error al conectar a la base de datos {}".format(ex), 'exito': False})
 
